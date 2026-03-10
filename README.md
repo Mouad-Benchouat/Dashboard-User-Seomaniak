@@ -74,13 +74,7 @@ npm run dev
 
 Le projet sera disponible sur **http://localhost:5173**
 
-```bash
-# Build pour la production
-npm run build
 
-# Prévisualiser le build
-npm run preview
-```
 
 ---
 
