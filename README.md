@@ -86,6 +86,6 @@ Le projet sera disponible sur **http://localhost:5173**
 
 
 
-**CSS pur** sans Tailwind ni CSS Modules : le projet est petit, un seul fichier `index.css` suffit. Les classes sont simples et lisibles (`card`, `input`, `btn`, `form-grid`).
+**CSS pur** sans Tailwind ni CSS Modules : le projet est petit, un seul fichier `index.css` suffit. Les classes sont simples et lisibles .
 
 **État local dans Dashboard** : pas besoin de Context ou Redux pour un projet de cette taille. Le state `users[]` vit dans le parent et descend aux enfants via props.
