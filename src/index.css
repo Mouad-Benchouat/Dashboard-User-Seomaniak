@@ -1,0 +1,193 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f4f4f4;
+  color: #1a1a1a;
+  font-family: 'Geist Mono', monospace;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* ── Logo ── */
+
+.logo {
+  height: 40px;
+  width: auto;
+  display: block;
+  margin-bottom: 28px;
+}
+
+/* ── Layout ── */
+
+.page {
+  width: 620px;
+  padding: 60px 0;
+}
+
+.header {
+  margin-bottom: 40px;
+}
+
+.header h1 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.header p {
+  color: #999;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+/* ── Card ── */
+
+.card {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  padding: 28px;
+  margin-bottom: 20px;
+}
+
+/* ── Form ── */
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.field label {
+  display: block;
+  font-size: 11px;
+  color: #999;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.input {
+  background: #fff;
+  border: 1px solid #d5d5d5;
+  color: #1a1a1a;
+  padding: 10px 12px;
+  width: 100%;
+  font-family: 'Geist Mono', monospace;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.input::placeholder {
+  color: #bbb;
+}
+
+.input:focus {
+  border-color: #00c4b4;
+}
+
+.btn {
+  background: #00c4b4;
+  color: #fff;
+  border: none;
+  padding: 10px 24px;
+  cursor: pointer;
+  font-family: 'Geist Mono', monospace;
+  font-size: 13px;
+  font-weight: 600;
+  transition: opacity 0.15s;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+/* ── Table ── */
+
+.card-title {
+  font-size: 12px;
+  font-weight: 500;
+  color: #999;
+  margin-bottom: 16px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead tr {
+  border-bottom: 2px solid #1a1a1a;
+}
+
+th {
+  font-size: 11px;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 0 12px 10px;
+  text-align: left;
+  font-weight: 400;
+}
+
+td {
+  padding: 12px;
+  font-size: 14px;
+  border-bottom: 1px solid #f0f0f0;
+  color: #1a1a1a;
+}
+
+.td-index {
+  color: #ccc;
+  font-size: 12px;
+  width: 36px;
+}
+
+.td-email {
+  color: #999;
+}
+
+tbody tr:hover {
+  background: #fafafa;
+}
+
+.btn-delete {
+  background: none;
+  border: 1px solid #e5e5e5;
+  color: #bbb;
+  padding: 4px 12px;
+  cursor: pointer;
+  font-family: 'Geist Mono', monospace;
+  font-size: 12px;
+  transition: all 0.15s;
+}
+
+.btn-delete:hover {
+  border-color: #ef4444;
+  color: #ef4444;
+}
+
+.empty {
+  text-align: center;
+  padding: 36px 0;
+  color: #ccc;
+  font-size: 13px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+tbody tr {
+  animation: fadeIn 0.2s ease forwards;
+}
