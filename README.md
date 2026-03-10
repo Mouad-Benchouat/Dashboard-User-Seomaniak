@@ -88,6 +88,10 @@ npm run preview
 
 **Vite** plutôt que Create React App : démarrage quasi-instantané et build plus rapide.
 
+---
+
+
+
 **CSS pur** sans Tailwind ni CSS Modules : le projet est petit, un seul fichier `index.css` suffit. Les classes sont simples et lisibles (`card`, `input`, `btn`, `form-grid`).
 
 **État local dans Dashboard** : pas besoin de Context ou Redux pour un projet de cette taille. Le state `users[]` vit dans le parent et descend aux enfants via props.
